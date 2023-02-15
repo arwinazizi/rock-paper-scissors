@@ -64,7 +64,7 @@ function game() {
             scorePlayer++
         }
         else if (checkWinner(playerChoice, computerChoice) == "computer") {
-            scorePlayer++
+            scoreComputer++
         }
     }
     console.log("Game over! ")
