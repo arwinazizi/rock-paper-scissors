@@ -15,7 +15,7 @@ function checkWinner(playerChoice, computerChoice) {
         return "tie";
      } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
-        (playerChoice === "Scissors" && computerChoise === "paper") ||
+        (playerChoice === "Scissors" && computerChoice === "paper") ||
         (playerChoice === "paper" && computerChoise === "rock")
      ) {
         return "player";
