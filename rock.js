@@ -9,14 +9,14 @@ function getComputerChoice() {
 
 
 function checkWinner(playerChoice, computerChoice) {
-    playerChice = playerChoice.toLowerCase();
+    playerChoice = playerChoice.toLowerCase();
 
     if (playerChoice === computerChoice) {
         return "tie";
      } else if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
-        (playerChoice === "Scissors" && computerChoise === "paper") ||
-        (playerChoice === "paper" && computerChoise === "rock")
+        (playerChoice === "Scissors" && computerChoice === "paper") ||
+        (playerChoice === "paper" && computerChoice === "rock")
      ) {
         return "player";
      } else {
@@ -64,13 +64,13 @@ function game() {
             scorePlayer++
         }
         else if (checkWinner(playerChoice, computerChoice) == "computer") {
-            scorePlayer++
+            scoreComputer++
         }
     }
     console.log("Game over! ")
     if (scorePlayer > scoreComputer) {
         console.log("You was the winner!") 
-    } else if (scoreComputer < scorePlayer) {
+    } else if (scoreComputer > scorePlayer) {
         console.log("You lose! Computer was the winner.")
     } else {
         console.log("We have a tie!")
