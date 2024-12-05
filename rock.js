@@ -36,7 +36,7 @@ getPlayerChoice()
 function win() {
     meScore++
     arwinScore.innerHTML = meScore;
-    result.innerHTML = 'You won this round boss!'
+    result.innerHTML = 'You won this round!'
 }
 function lose() {
     pcScore++
@@ -44,7 +44,7 @@ function lose() {
     result.innerHTML =  'You loose this round, Loser!'
 }
 function tie() {
-    result.innerHTML = 'This round was a tie mr bossman'
+    result.innerHTML = 'This round was a tie!'
 }
 
 
